@@ -14,11 +14,11 @@ export const mutations = {
 // Getters
 export const getters = {
     getCards: (state) => state.cards,
-/*     getCardsStartingWithM: (state) => {
+    getCardsStartingWithM: (state) => {
         return state.cards.filter((card) =>
           card.serviceName.toLowerCase().startsWith('m')
         );
-    }, */
+    },
 };
 
 export default {

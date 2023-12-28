@@ -63,7 +63,7 @@
                 this.formData.serviceRating = rating === this.formData.serviceRating ? 0 : rating;
                 this.formData.serviceRating = rating;
             }
-        }
+        },
     };
 </script>
 
