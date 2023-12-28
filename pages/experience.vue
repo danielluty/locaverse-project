@@ -5,8 +5,8 @@
             the task without help, but due to Christmas days, there was not enough time. 
             So I decided to use AI and Stackoverflow. I had some issues with implementig the 5 star 
             rating system, but after some research it was obviously pretty easy. I had some problems 
-            with showing cards starting with the letter "m" on the other page. The solution will follow 
-            soon. Vue seems to be a really intuitive framework and I liked to work with it :).</p><br>
+            with showing cards starting with the letter "m" on the other page (Vuex) as well, but
+            finally managed to handle it.</p><br>
             <h2>Cards with Service Name Starting with 'M'</h2>
             <div class="container">
                 <div v-for="card in cardsStartingWithM" :key="card.id">
