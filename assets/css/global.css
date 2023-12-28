@@ -1,0 +1,97 @@
+/* General */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    max-width: 800px;
+}
+
+h3 {
+    margin: .5rem 0 0;
+}
+
+
+.footer {
+    text-align: center;
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: #fff;
+}
+
+/* Form */
+.main-form {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: .5rem 0;
+}
+
+.rating-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating-input span {
+    font-size: 1.5em;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.rating-input {
+     font-size: 24px;
+}
+
+
+/* Card */
+.card { 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: .5rem;
+    width: 200px;
+    border: 1px solid darkgray;
+}
+
+span {
+    margin-bottom: .5rem;
+}
+
+.star {
+    color: gold;
+    font-size: 1.8rem;
+}
+
+.star-display {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.star.fas::before {
+    content: '\2605'; /* Filled star */
+    color: gold;
+}
+
+.star.far::before {
+    content: '\2606'; /* Empty star */
+    color: gold;
+}

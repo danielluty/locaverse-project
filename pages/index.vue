@@ -37,22 +37,4 @@ export default {
 </script>
 
 <style scoped>
-
-    .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-bottom: 4rem;
-    }
-
-    .footer {
-        text-align: center;
-        font-size: 1.5rem;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 1rem;
-        background: #fff;
-    }
 </style>

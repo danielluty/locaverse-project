@@ -49,49 +49,4 @@ export default {
 </script>
 
 <style scoped>
-    .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-bottom: 4rem;
-    }
-    
-    p {
-        line-height: 1.5;
-        font-size: 1.2rem;
-        max-width: 800px;
-    }
-
-    .card { 
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        margin: .5rem;
-        width: 200px;
-        border: 1px solid darkgray;
-    }
-
-    span {
-        margin-bottom: .5rem;
-    }
-
-    .star {
-        color: gold;
-        font-size: 1.8rem;
-    }
-
-    .star-display {
-        text-align: center;
-        padding-top: 1rem;
-    }
-
-    .star.fas::before {
-        content: '\2605'; /* Unicode character for a filled star */
-        color: gold;
-    }
-
-    .star.far::before {
-        content: '\2606'; /* Unicode character for an empty star */
-        color: gold;
-    }
 </style>
