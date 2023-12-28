@@ -8,22 +8,24 @@
             with showing cards starting with the letter "m" on the other page. The solution will follow 
             soon. Vue seems to be a really intuitive framework and I liked to work with it :).</p><br>
             <h2>Cards with Service Name Starting with 'M'</h2>
-            <div v-for="card in cardsStartingWithM" :key="card.id">
-            <!-- Display card information as needed -->
-            <div class="card">
-                <h3>Service name:</h3>
-                <span>{{ card?.serviceName }}</span>
-                <h3>Business name:</h3>
-                <span>{{ card?.businessName }}</span>
-                <h3>Service rating:</h3>
-                <div class="star-display">
-                    <span
-                        v-for="n in 5"
-                        :key="n"
-                        :class="{ 'fas star': n <= card?.serviceRating, 'far star': n > card?.serviceRating }"
-                    ></span>
+            <div class="container">
+                <div v-for="card in cardsStartingWithM" :key="card.id">
+                    <!-- Display card information as needed -->
+                    <div class="card">
+                        <h3>Service name:</h3>
+                        <span>{{ card?.serviceName }}</span>
+                        <h3>Business name:</h3>
+                        <span>{{ card?.businessName }}</span>
+                        <h3>Service rating:</h3>
+                        <div class="star-display">
+                            <span
+                                v-for="n in 5"
+                                :key="n"
+                                :class="{ 'fas star': n <= card?.serviceRating, 'far star': n > card?.serviceRating }"
+                            ></span>
+                        </div>
+                    </div>
                 </div>
-            </div>
             </div>
         <nuxt-link to="/">Back to index</nuxt-link>
 
@@ -47,6 +49,13 @@ export default {
 </script>
 
 <style scoped>
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+    }
+    
     p {
         line-height: 1.5;
         font-size: 1.2rem;
